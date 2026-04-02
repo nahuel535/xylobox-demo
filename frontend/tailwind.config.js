@@ -7,39 +7,40 @@ export default {
   theme: {
     extend: {
       colors: {
+        // xylo-* kept as alias → black/white so all existing class usage works
         xylo: {
-          50: "#eef5f2",
-          100: "#d7e7e0",
-          200: "#b2d0c4",
-          300: "#6db89e",
-          400: "#4a9d7f",
-          500: "#3d8a6e",
-          600: "#2f6f58",
-          700: "#245544",
-          800: "#1a3d31",
-          900: "#112820",
+          50:  "#f9f9f9",
+          100: "#f0f0f0",
+          200: "#d4d4d4",
+          300: "#a3a3a3",
+          400: "#737373",
+          500: "#171717",  // primary action → near-black
+          600: "#0d0d0d",
+          700: "#0a0a0a",
+          800: "#080808",
+          900: "#050505",
         },
         base: {
-          bg: "#f5f5f7",
-          card: "#ffffff",
-          border: "#d2d2d7",
-          text: "#1d1d1f",
-          muted: "#6e6e73",
-          subtle: "#e8e8ed",
+          bg:     "#0a0a0a",   // page background — deep black
+          card:   "#111111",   // card surface
+          border: "#232323",   // borders
+          text:   "#f5f5f5",   // primary text — near white
+          muted:  "#737373",   // secondary text — gray
+          subtle: "#1a1a1a",   // subtle backgrounds
         },
       },
       fontFamily: {
         sans: ["-apple-system", "BlinkMacSystemFont", "SF Pro Display", "SF Pro Text", "Helvetica Neue", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 2px 12px rgba(0,0,0,0.08)",
-        card: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)",
-        elevated: "0 8px 32px rgba(0,0,0,0.12)",
+        soft:     "0 2px 12px rgba(0,0,0,0.4)",
+        card:     "0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2)",
+        elevated: "0 8px 32px rgba(0,0,0,0.5)",
       },
       borderRadius: {
-        xl: "12px",
-        "2xl": "16px",
-        "3xl": "20px",
+        xl:   "12px",
+        "2xl":"16px",
+        "3xl":"20px",
       },
     },
   },

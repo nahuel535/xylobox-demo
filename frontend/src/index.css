@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color: #1d1d1f;
-  background: #f5f5f7;
+  color: #f5f5f5;
+  background: #0a0a0a;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,49 +13,45 @@
 html, body, #root {
   min-height: 100%;
   margin: 0;
-  background: #f5f5f7;
+  background: #0a0a0a;
 }
 
 body {
-  color: #1d1d1f;
+  color: #f5f5f5;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Scrollbar estilo Apple */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c7c7cc;
+  background: #2a2a2a;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #aeaeb2;
+  background: #3a3a3a;
 }
 
-/* Selección de texto */
+/* Text selection */
 ::selection {
-  background: rgba(61, 138, 110, 0.2);
-  color: #1d1d1f;
+  background: rgba(255,255,255,0.15);
+  color: #f5f5f5;
 }
 
-/* Transiciones suaves globales */
 *, *::before, *::after {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Focus visible estilo Apple */
 :focus-visible {
-  outline: 2px solid #3d8a6e;
+  outline: 2px solid rgba(255,255,255,0.5);
   outline-offset: 2px;
   border-radius: 6px;
 }
-
-

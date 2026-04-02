@@ -10,12 +10,12 @@ export default function DemoBanner() {
         display: "flex",
         alignItems: "center",
         gap: 10,
-        background: "rgba(29, 64, 50, 0.96)",
-        border: "1px solid rgba(61, 138, 110, 0.4)",
-        backdropFilter: "blur(14px)",
+        background: "rgba(245,245,245,0.08)",
+        border: "1px solid rgba(255,255,255,0.12)",
+        backdropFilter: "blur(20px)",
         borderRadius: 999,
         padding: "10px 20px",
-        boxShadow: "0 8px 32px rgba(0,0,0,0.35)",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
         whiteSpace: "nowrap",
         pointerEvents: "none",
         userSelect: "none",
@@ -26,20 +26,20 @@ export default function DemoBanner() {
           width: 7,
           height: 7,
           borderRadius: "50%",
-          background: "#4ade80",
+          background: "#f5f5f5",
           flexShrink: 0,
-          boxShadow: "0 0 0 3px rgba(74,222,128,0.25)",
         }}
       />
       <span
         style={{
           fontSize: 12,
-          fontWeight: 600,
-          color: "rgba(255,255,255,0.9)",
-          letterSpacing: "0.01em",
+          fontWeight: 700,
+          color: "rgba(245,245,245,0.9)",
+          letterSpacing: "0.06em",
+          textTransform: "uppercase",
         }}
       >
-        Modo Demo
+        Velto Demo
       </span>
       <span
         style={{
@@ -52,10 +52,10 @@ export default function DemoBanner() {
       <span
         style={{
           fontSize: 12,
-          color: "rgba(255,255,255,0.5)",
+          color: "rgba(255,255,255,0.45)",
         }}
       >
-        Los datos son simulados · Las acciones no se guardan
+        Sistema 100% personalizado a tu marca · Datos simulados
       </span>
     </div>
   );
